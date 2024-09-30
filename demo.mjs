@@ -23,6 +23,11 @@ swClient.on('error', ({error, message}) => {
 
 });
 
+swClient2.on('error', ({error, message}) => {
+    console.error('Error', error, message);
+
+});
+
 swClient2.on('message', ({message, nodeAddress}) => {
     console.log('Received message2', message, nodeAddress);
 });

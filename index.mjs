@@ -95,7 +95,11 @@ export default class SWWSClient extends EventEmitter {
         this.wsn = new WebsocketNetwork({myAddress: this.myAddress, myPrivateKey: this.myPrivateKey});
         await this.wsn.init();
         this.wsn.on('message', async ({message, nodeAddress}) => {
-            await this.protocolMessages.process(message, {nodeAddress});
+            try {
+                await this.protocolMessages.process(message, {nodeAddress});
+            }catch (e) {
+                this.emit('error', {error: e, message});
+            }
         });
 
         this.protocolMessages.on('message', ({message, nodeAddress}) => {
