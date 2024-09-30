@@ -1,6 +1,6 @@
 {
   "name": "@starwave/js-starwave-client",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.mjs",
   "scripts": {
   },
@@ -10,6 +10,10 @@
   "dependencies": {
     "web3": "^4.13.0",
     "ws": "^8.18.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/starwave-protocol/js-starwave-client.git"
   },
   "keywords": [
     "starwave",
