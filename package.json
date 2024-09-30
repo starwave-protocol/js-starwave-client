@@ -1,5 +1,5 @@
 {
-  "name": "js-starwave-client",
+  "name": "@starwave/js-starwave-client",
   "version": "0.0.1",
   "main": "index.mjs",
   "scripts": {
