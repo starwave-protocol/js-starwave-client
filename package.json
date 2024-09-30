@@ -10,5 +10,13 @@
   "dependencies": {
     "web3": "^4.13.0",
     "ws": "^8.18.0"
-  }
+  },
+  "keywords": [
+    "starwave",
+    "client",
+    "protocol",
+    "web3",
+    "p2p",
+    "websocket"
+  ]
 }
